@@ -8,10 +8,10 @@ var content = { txs: [] };
 app.use(cors());
 app.use(express.json());
 
-app.all("/", (req, res) => {
-  console.log("Just got a request!");
-  res.send("Yo!");
-});
+// app.all("/", (req, res) => {
+//   console.log("Just got a request!");
+//   res.send("Yo!");
+// });
 
 app.post("/api/addTransaction", async (req, res) => {
   try {
