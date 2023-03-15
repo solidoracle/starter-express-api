@@ -8,9 +8,9 @@ var content = { txs: [] };
 app.use(cors());
 app.use(express.json());
 
-// app.all("/", (req, res) => {
-//   res.send("Yo!");
-// });
+app.all("/", (req, res) => {
+  res.send("Yo!");
+});
 
 console.log("content: ", content);
 
