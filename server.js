@@ -12,6 +12,8 @@ app.all("/", (req, res) => {
   res.send("Yo!");
 });
 
+console.log("HELLO!");
+
 app.post("/api/addTransaction", async (req, res) => {
   try {
     console.log(req.body);
